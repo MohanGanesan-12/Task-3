@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Landing Page</title>
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">MG Technologies</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Carousel -->
+   
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image/photo1.jpeg" class="d-block w-100" alt="Photo 1">
+            </div>
+            <div class="carousel-item">
+                <img src="image/photo2.jpeg" class="d-block w-100" alt="Photo 2">
+            </div>
+            <div class="carousel-item">
+                <img src="image/photo3.jpeg" class="d-block w-100" alt="Photo 3">
+            </div>
+            <!-- Add more carousel items for additional images -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        
+        <!-- Carousel Indicators -->
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleControls" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleControls" data-bs-slide-to="2"></li>
+            <!-- Add more li elements for additional images -->
+        </ol>
+    </div>
+    
+    <section class="columns">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="column">
+                        <h3>Design</h3>
+                        <p>"Design is not about making things look good. It's about making things work better."</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="column">
+                        <h3>Style</h3>
+                        <p>"Style is a matter of instinct, taste, and common sense."</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="column">
+                        <h3>Creativity</h3>
+                        <p>"Creativity is seeing what everyone else has seen and thinking what no one else ever thought."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+<!-- About Us Section -->
+
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center">About Us</h2><br>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Welcome to MG Technologies</h4> <br>
+                <p>
+                    At MG Technologies, we are a passionate team of tech enthusiasts dedicated to crafting exceptional digital experiences for our clients. With years of collective expertise and a commitment to innovation, we take pride in delivering cutting-edge web solutions that leave a lasting impact.
+                </p>
+                <p>
+                    Our mission is simple - to transform ideas into reality through creative web development solutions. We strive to understand our clients' unique needs and objectives, allowing us to build websites and applications that not only impress visually but also deliver tangible results.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="image/about_us_image.jpeg" class="card-img-top" alt="Coffee Shop Interior">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+
+<section id="services" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Services</h2><br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card services-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Website Design</h5>
+                        <p>
+                            We create stunning and user-friendly website designs that leave a lasting impression on your visitors.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card services-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development</h5>
+                        <p>
+                            Our skilled developers bring your website to life with seamless functionality and cutting-edge technology.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card services-card">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile App Development</h5>
+                        <p>
+                            We craft custom mobile apps that deliver an exceptional user experience and drive business growth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Testimonials</h2>
+        <div class="row">
+            <div class="col-md-4 d-flex">
+                <div class="card h-100 testimonial-card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">John Doe</h5>
+                        <img src="image/person1.jpg" width="ms-auto" height="200px" class="card-img-top testimonial-image" alt="John Doe Photo"><br>
+                        <p class="card-text">
+                            "Working with MG Technologies was a pleasure! They understood our needs, creating a stunning website that embodies our brand. The team's attention to detail and seamless communication made the process stress-free. Highly recommended!"
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div class="card h-100 testimonial-card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Jane Smith</h5>
+                        <img src="image/person2.jpeg" width="ms-auto" height="200px" class="card-img-top testimonial-image" alt="Jane Smith Photo"><br>
+                        <p class="card-text">
+                            "MG Technologies turned my vision into reality! Their expertise in modern web technologies and responsive design ensured a great user experience. They were flexible and accommodating throughout the project."
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div class="card h-100 testimonial-card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">David Johnson</h5>
+                        <img src="image/person3.jpg" width="ms-auto" height="200px" class="card-img-top testimonial-image" alt="David Johnson Photo"><br>
+                        <p class="card-text">
+                            "Choosing MG Technologies was the best decision for our e-commerce platform. They integrated payment gateways flawlessly, resulting in increased sales and customer satisfaction. Reliable and professional!"
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section-->
+<section id="contact" class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="text-center mb-4">Contact Us</h2>
+                <div class="contact-form-box ">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-sm" id="name" placeholder="Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control form-control-sm" id="email" placeholder="Email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control form-control-sm" id="phone" placeholder="Phone">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control form-control-sm" id="message" rows="5" placeholder="Message"></textarea>
+                        </div>
+                        
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-brown">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Bootstrap JS scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
